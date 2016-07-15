@@ -89,6 +89,9 @@
     var music = document.getElementById("music"), audioFir = document.getElementById("audioFir");
     var playS = document.getElementById('playS');
     music.addEventListener("click", function () {
+         bgW1.style.display = 'block';
+        bgW2.style.display = 'none';
+        playS.style.display = 'block';
         audioFir.play();
     }, false);
     audioFir.addEventListener("canplaythrough", function () {
